@@ -1,11 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { Element } from "../components";
 
 export const PageMain = () => {
-    const { t } = useTranslation();
-
     return (
         <main>
-
+            <Element />
         </main>
     )
 };
