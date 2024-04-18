@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { PageMain } from './pages/main';
+import { PageMain } from '@/pages/main';
 
 const App = () => (
   <>

@@ -1,3 +1,9 @@
+import { Element } from "../components";
+
 export const PageMain = () => {
-    return <>a</>
+    return (
+        <main>
+            <Element />
+        </main>
+    )
 };
