@@ -1,9 +1,13 @@
-import { Element } from "../components";
+import ModelLoading from '@/components/ModelLoading';
+import style from './main.module.scss';
+import { Suspense } from 'react';
 
 export const PageMain = () => {
     return (
-        <main>
-            <Element />
+        <main className={style.main}>
+            <Suspense fallback={<ModelLoading />}>
+
+            </Suspense>
         </main>
     )
 };

@@ -31,11 +31,24 @@ module.exports = {
                     loader: 'sass-loader',
                 }],
             },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif|ico)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        publicPath: './',
+                        name: '[name].[ext]',
+                    },
+                }
+            }
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
+            filename: './index.html',
+            favicon: './public/favicon.ico'
         }),
     ],
     devtool: 'inline-source-map',
